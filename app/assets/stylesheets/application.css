@@ -41,6 +41,23 @@ input {
   }
 }
 
+textarea {
+  width: 99%;
+  border: 1px dotted #667;
+  color: #667;
+  font-family: helvetica, verdana, arial, sans-serif;
+  font-size: 100%;
+  &:focus {
+    background: #fffddd;
+  }
+}
+
+select {
+  font-family: helvetica, verdana, arial, sans-serif;
+  font-size: 100%;
+  width: 200px;
+}
+
 button {
   background: #00aa00;
   font-family: helvetica, verdana, arial, sans-serif;

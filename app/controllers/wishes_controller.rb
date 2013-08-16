@@ -14,6 +14,7 @@ class WishesController < ApplicationController
 
   # GET /wishes/new
   def new
+    @films = Film.all
     @wish = Wish.new
   end
 

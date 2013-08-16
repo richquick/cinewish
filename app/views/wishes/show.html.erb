@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
 
+<p><%= @wish.twitter %> wants to see <strong><%= @wish.film %></strong> with someone.</p>
+
+<hr />
 <p>
-  <strong>Twitter:</strong>
-  <%= @wish.twitter %>
+  Yeah, go on. How about this showing?
+  <select>
+    <option>Time 1</option>
+    <option>Time 2</option>
+    <option>Time 3</option>
+  </select>
 </p>
 
-<p>
-  <strong>Film:</strong>
-  <%= @wish.film %>
-</p>
+<textarea placeholder="Anything else you wanna say.."></textarea>
 
-<%= link_to 'Edit', edit_wish_path(@wish) %> |
-<%= link_to 'Back', wishes_path %>
+<button type="submit">How's that?</button>

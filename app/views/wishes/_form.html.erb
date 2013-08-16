@@ -15,7 +15,11 @@
   <p>
     I am <%= f.text_field :twitter %> and I <em>wish</em> someone would come with me to see 
 
-    <%= f.number_field :film %>
+    <select name="wish[film]">
+    <% @films.each do |film| %>
+      <option><%= film.name %><option>
+    <% end %>
+    </select>
   </p>
   <button type="submit">Anyone?</button>
 <% end %>
