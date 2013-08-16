@@ -1,5 +1,7 @@
 Cinewish::Application.routes.draw do
 
+  resources :showings
+
   resources :films
 
   root :to => "wishes#new"

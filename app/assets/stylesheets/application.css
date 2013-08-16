@@ -41,6 +41,11 @@ input {
   }
 }
 
+.url strong {
+  padding: 5px 20px;
+  background: #fff;
+}
+
 textarea {
   width: 99%;
   border: 1px dotted #667;
