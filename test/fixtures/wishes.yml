@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  twitter: MyString
+  film: 1
+
+two:
+  twitter: MyString
+  film: 1
