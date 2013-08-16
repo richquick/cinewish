@@ -1,0 +1,35 @@
+<h1>Listing options</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Twitter</th>
+      <th>Film</th>
+      <th>Time</th>
+      <th>Message</th>
+      <th>Wish</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @options.each do |option| %>
+      <tr>
+        <td><%= option.twitter %></td>
+        <td><%= option.film %></td>
+        <td><%= option.time %></td>
+        <td><%= option.message %></td>
+        <td><%= option.wish_id %></td>
+        <td><%= link_to 'Show', option %></td>
+        <td><%= link_to 'Edit', edit_option_path(option) %></td>
+        <td><%= link_to 'Destroy', option, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Option', new_option_path %>

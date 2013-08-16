@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  Cool! You want to see the <%= DateTime.parse(@option.time).strftime("%l:%M%P") %> showing of <strong><%= @option.film %></strong> on <%= DateTime.parse(@option.time).strftime("%d/%m/%Y") %> with your pal.</p>
+<p>
+  <strong>Message:</strong>
+  <%= @option.message %>
+</p>

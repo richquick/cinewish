@@ -7,17 +7,23 @@
 
 <hr />
 <p>
-  Yeah, go on. How about this showing?
-  <select name="wish[film]">  
+<form accept-charset="UTF-8" action="/options" class="new_option" id="new_option" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="QsJnp3GkE9/f0iGqxSvn6ngc2vmv61NSxmo+C4XGlZw="></div>
+
+<input name="option[film]"    type="hidden" value="<%= @wish.film %>">
+<input name="option[wish_id]" type="hidden" value="<%= @wish.id %>">
+  It's <input name="option[twitter]" > Yeah, go on. How about this showing?
+  <select name="option[time]">  
     <% @showings.each do |showing| %>
       <% if @wish.film == showing.film %>
-      <option value="<%= showing.datetime %>"><%= showing.datetime.strftime("%l:%M%P on %d/%m/%Y") %><option>
+      <option value="<%= showing.datetime %>"><%= showing.datetime.strftime("%l:%M%P on %d/%m/%Y") %></option>
       <% end %>
     <% end %>
   </select>
 </p>
 
-<textarea placeholder="Anything else you wanna say.."></textarea>
+<textarea name="option[message]" placeholder="Anything else you wanna say.."></textarea>
 
 <button type="submit">How's that?</button>
+
+</form>
 <% end %>

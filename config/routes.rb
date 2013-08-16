@@ -1,5 +1,7 @@
 Cinewish::Application.routes.draw do
 
+  resources :options
+
   resources :showings
 
   resources :films
