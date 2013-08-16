@@ -13,7 +13,7 @@
  */
 
  body {
-  background-color: #ddf;
+  background-color: #E9E8E3;
   color: #667;
   font-family: helvetica, verdana, arial, sans-serif;
   font-size: 150%;
@@ -28,11 +28,13 @@
 header {
   background: #2F4356;
   font-family: "Futura", helvetica, verdana, arial, sans-serif;
-  color: #ccc;
+  color: #eee;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 120%;
   text-align: center;
   box-shadow: 0 0 5px rgba(0,0,0,0.8);
+  border-bottom: 3px solid #2B3339;
   strong {
     color: #fff;
   }
@@ -47,13 +49,12 @@ em {
 }
 
 input {
-  background: transparent;
-  border: none;
-  border-bottom: 1px dotted #667;
+  border: 1px solid #B8B8B8;
   color: #667;
   font-family: helvetica, verdana, arial, sans-serif;
   font-size: 100%;
   width: 200px;
+  border-radius: 5px;
   &:focus {
     background: #fffddd;
   }
@@ -66,10 +67,11 @@ input {
 
 textarea {
   width: 99%;
-  border: 1px dotted #667;
+  border: 1px solid #B8B8B8;
   color: #667;
   font-family: helvetica, verdana, arial, sans-serif;
-  font-size: 100%;
+  font-size: 80%;
+  border-radius: 5px;
   &:focus {
     background: #fffddd;
   }
@@ -82,17 +84,20 @@ select {
 }
 
 button {
-  background: #00aa00;
+  background: #E8473F;
+  background: -moz-linear-gradient(top, #E8473F 0, #E64F45 100%);
+  background: -webkit-linear-gradient(top, #E8473F 0, #E64F45 100%);
+  background: linear-gradient(top, #E8473F 0, #E64F45 100%);
   font-family: helvetica, verdana, arial, sans-serif;
-  font-size: 100%;
+  font-size: 70%;
   color: #fff;
-  border: none;
+  border: 1px solid #960A0B;
   padding: 5px 20px;
   text-shadow: 1px 1px 1px #333;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    background: #009900;
+    background: darken(#E8473F,10%);
   }
 }
 
