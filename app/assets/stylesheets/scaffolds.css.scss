@@ -1,21 +1,51 @@
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  background-color: #ddf;
+  color: #667;
+  font-family: helvetica, verdana, arial, sans-serif;
+  font-size: 150%;
   line-height: 18px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
   line-height: 18px;
+}
+
+em {
+  color: #334;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dotted #667;
+  color: #667;
+  font-family: helvetica, verdana, arial, sans-serif;
+  font-size: 100%;
+  width: 200px;
+  &:focus {
+    background: #fffddd;
+  }
+}
+
+button {
+  background: #00aa00;
+  font-family: helvetica, verdana, arial, sans-serif;
+  font-size: 100%;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  text-shadow: 1px 1px 1px #333;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background: #009900;
+  }
 }
 
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px;
 }
 
 a {
@@ -56,14 +86,12 @@ div {
     text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
-    font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
     background-color: #c00;
     color: #fff;
   }
   ul li {
-    font-size: 12px;
     list-style: square;
   }
 }

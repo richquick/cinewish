@@ -11,15 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :twitter %><br>
-    <%= f.text_field :twitter %>
-  </div>
-  <div class="field">
-    <%= f.label :film %><br>
+
+  <p>
+    I am <%= f.text_field :twitter %> and I <em>wish</em> someone would come with me to see 
+
     <%= f.number_field :film %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </p>
+  <button type="submit">Anyone?</button>
 <% end %>
